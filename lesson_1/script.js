@@ -6,7 +6,7 @@ console.log(shopName);
 
 var shopGoods = [];
 var employers = {};
-var open;
+var open = false;
 
 mainList = {
  budget,
