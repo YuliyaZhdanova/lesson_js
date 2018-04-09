@@ -1,25 +1,3 @@
-var budget = prompt("Ваш бюджет");
-var shopName = prompt('Название вашего магазина?');
-
-console.log(budget);
-console.log(shopName);
-
-var shopGoods = [];
-var employers = {};
-var open = false;
-
-mainList = {
- budget,
- shopName,
- shopGoods,
- employers,
- open
-}
-
-for (var i = 0; i < 3; i++) {
-	shopGoods[i] = prompt('Какой тип товаров будем продавать?');
-}
-
-console.log(shopGoods[1]);
-
-alert('Бюджет на один день: ' + budget/30 + ' руб');
+var D = new Date(2014,1,21),  // 21 February 2014
+    myday = new Date(D.getFullYear(),D.getMonth(),new Date(D.getFullYear(),D.getMonth()+1,0).getDate());  // 28 February 2014
+alert(myday);
